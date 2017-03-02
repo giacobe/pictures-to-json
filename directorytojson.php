@@ -1,4 +1,14 @@
 <?php
+
+/*
+This code was scraped together by Nick G and Wade S during the GeoHuntsville Hackathon.  Need to still address:
+1) directory into a variable
+2) web directory to local directory mapping
+3) GeoJSON format for images embedded
+4) Modificaitons to the GeoJSON import in GeoQ
+5) Comments and attribution (esp for GetGPps function and gps2Num function)
+*/
+
 function getGps($exifCoord, $hemi) {
 
     $degrees = count($exifCoord) > 0 ? gps2Num($exifCoord[0]) : 0;
