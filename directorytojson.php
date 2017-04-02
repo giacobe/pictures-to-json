@@ -45,10 +45,34 @@ function reportGps ($exif) {
 
 
 // Main
+/*
+MR: Added GeoQ parameters below:
+*/
 
 $geojson = array(
-	'type'	=> 'FeatureCollection',
-	'features' =>	array()
+	'features'  => array(), 
+	'id' => 1000,
+	'type' => "FeatureCollection",
+	'format' => "",
+	'url' => "",
+	'subdomains' => "",
+	'layer' => "",
+	'transparent' => True,
+	'layerParams' => "{}",
+	'dynamicParams' => "{}",
+	'refreshrate' => 0,
+	'token' => "",
+	'attribution' => "",
+	'spatialReference' => "",
+	'layerParsingFunction' => "",
+	'enableIdentify' => False,
+	'rootField' => "",
+	'infoFormat' => "",
+	'fieldsToShow' => "",
+	'description' => "",
+	'downloadableLink' => null,
+	'layer_info_link' => null,
+	'styles' => ""
 );
 
 $directory = './';
